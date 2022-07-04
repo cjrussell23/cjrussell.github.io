@@ -11,9 +11,9 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navId" tabindex="0">
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md bg-light fixed-top">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md bg-light fixed-top" id="navId">
         <!-- Logo/Name -->
         <a class="navbar-brand mx-4 h1" href="#">Charles Russell</a>
         <!-- Nav Button -->
@@ -32,7 +32,7 @@
             <div class="offcanvas-body bg-dark">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#intro">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -44,7 +44,8 @@
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/cjrussell23"><img src="assets\images\GitHub-Mark-Light-32px.png" width="16px"> Github</a>
+                        <a class="nav-link" href="https://github.com/cjrussell23"><img
+                                src="assets\images\GitHub-Mark-Light-32px.png" width="16px"> Github</a>
                     </li>
                 </ul>
             </div>
@@ -66,14 +67,15 @@
         <div class="container-fluid scroll-snap" id="about">
             <div class="row">
                 <div class="col text-box">
-                    <h1 class="text-center">About Me</h1>
-                    <p class="text-center">I'm a recent graduate from the University of Winnipeg. I grauduated with a Bsc. in Applied Computer Science in June 2022. I now live in Calgary, Alberta where I am looking for work as a software developer. In my free time I love creating games, playing games with friends, playing music, hiking and fishing.</p>
+                    <p class="text-center">I'm a recent graduate from the University of Winnipeg. I grauduated with a
+                        Bsc. in Applied Computer Science in June 2022. I now live in Calgary, Alberta where I am looking
+                        for work as a software developer. In my free time I love creating games, playing games with
+                        friends, playing music, hiking and fishing.</p>
                 </div>
             </div>
         </div>
         <!-- Skills Section -->
         <div class="container-fluid scroll-snap" id="skills">
-            <h1 class="text-center pb-5">Skills</h1>
             <div class="row justify-content-evenly">
                 <div class="col-md-3 col-sm-12 mx-1 my-1 px-2 py-2 skill">
                     <h3>Languages</h3>
@@ -110,8 +112,73 @@
         <div class="container-fluid scroll-snap" id="projects">
             <div class="row">
                 <div class="col">
-                    <h1 class="text-center">Projects</h1>
-                    <p class="text-center">Coming Soon!</p>
+                    <!-- Projecct Carousel -->
+                    <div id="project-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <!-- Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <!-- First item - Flappy Bird Clone -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active pt-4" data-bs-interval="10000">
+                                <div class="project" id="flappybird" data-bs-toggle="modal" data-bs-target="#Modal">
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="ModalLabel">Flappy Bird Clone</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>This is a game that I built after my first year of computer science. I have learned a lot since this project. This was really fun to make at the time, I learned a lot about game engines and physicis calculations. I'm glad that I build my games in Unity now and I don't have to worry about those things as much.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary" href="https://github.com/cjrussell23/FlappyBirb" role="button">View on GitHub</a>
+                                                    <a class="btn btn-success" href="https://github.com/cjrussell23/FlappyBirb/releases/download/v1.0.0/Flerppy.Birb.jar" role="button">Download</a>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Modal -->
+                                </div>
+                                <div class="carousel-caption">
+                                    <h5>Flappy Bird Clone</h5>
+                                    <p>Made with Java AWT</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item pt-4" data-bs-interval="10000">
+                                <div class="project" id="unity">
+                                    <h3 class="text-center pt-2">Unity</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item pt-4" data-bs-interval="10000">
+                                <div class="project" id="website">
+                                    <h3 class="text-center pt-2">Portfolio Website</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project-carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#project-carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

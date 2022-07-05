@@ -44,6 +44,9 @@
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="https://github.com/cjrussell23"><img
                                 src="assets\images\GitHub-Mark-Light-32px.png" width="16px"> Github</a>
                     </li>
@@ -104,6 +107,7 @@
                         <li>Git</li>
                         <li>GitHub</li>
                         <li>Unix</li>
+                        <li>Photoshop</li>
                     </ul>
                 </div>
             </div>
@@ -113,7 +117,7 @@
             <div class="row">
                 <div class="col">
                     <!-- Projecct Carousel -->
-                    <div id="project-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div id="project-carousel" class="carousel slide" data-bs-ride="carousel">
                         <!-- Indicators -->
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="0" class="active"
@@ -122,14 +126,16 @@
                                 aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
                         </div>
                         <!-- First item - Flappy Bird Clone -->
                         <div class="carousel-inner">
                             <div class="carousel-item active pt-4" data-bs-interval="10000">
-                                <div class="project" id="flappybird" data-bs-toggle="modal" data-bs-target="#Modal">
+                                <div class="project" id="flappybird" data-bs-toggle="modal" data-bs-target="#birdmodal">
 
                                     <!-- Modal -->
-                                    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel"
+                                    <div class="modal fade" id="birdmodal" tabindex="-1" aria-labelledby="ModalLabel"
                                         aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
@@ -139,11 +145,20 @@
                                                         aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <p>This is a game that I built after my first year of computer science. I have learned a lot since this project. This was really fun to make at the time, I learned a lot about game engines and physicis calculations. I'm glad that I build my games in Unity now and I don't have to worry about those things as much.</p>
+                                                    <p>This is a game that I built after my first year of computer
+                                                        science. I have learned a lot since this project. This was
+                                                        really fun to make at the time, I learned a lot about game
+                                                        engines and physicis calculations. I'm glad that I build my
+                                                        games in Unity now and I don't have to worry about those things
+                                                        as much.</p>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <a class="btn btn-primary" href="https://github.com/cjrussell23/FlappyBirb" role="button">View on GitHub</a>
-                                                    <a class="btn btn-success" href="https://github.com/cjrussell23/FlappyBirb/releases/download/v1.0.0/Flerppy.Birb.jar" role="button">Download</a>
+                                                    <a class="btn btn-primary"
+                                                        href="https://github.com/cjrussell23/FlappyBirb"
+                                                        role="button">View on GitHub</a>
+                                                    <a class="btn btn-success"
+                                                        href="https://github.com/cjrussell23/FlappyBirb/releases/download/v1.0.0/Flerppy.Birb.jar"
+                                                        role="button">Download</a>
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Close</button>
                                                 </div>
@@ -157,14 +172,110 @@
                                     <p>Made with Java AWT</p>
                                 </div>
                             </div>
+                            <!-- Second item - Arcade Games -->
                             <div class="carousel-item pt-4" data-bs-interval="10000">
-                                <div class="project" id="unity">
-                                    <h3 class="text-center pt-2">Unity</h3>
+                                <div class="project" id="arcade" data-bs-toggle="modal" data-bs-target="#arcademodal">
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="arcademodal" tabindex="-1" aria-labelledby="ModalLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="ModalLabel">Arcade Games</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>@todo description</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary"
+                                                        href="https://github.com/cjrussell23/Arcade" role="button">View
+                                                        on GitHub</a>
+                                                    <a class="btn btn-success"
+                                                        href="https://github.com/cjrussell23/Arcade/releases/download/v1.0.5/CJ.s.Arcade.v1.0.5.zip"
+                                                        role="button">Download</a>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Modal -->
+                                    <div class="carousel-caption">
+                                        <h5>Arcade Games</h5>
+                                        <p>Made with Unity / C#</p>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- Third item - Knight of Xylasia -->
                             <div class="carousel-item pt-4" data-bs-interval="10000">
-                                <div class="project" id="website">
-                                    <h3 class="text-center pt-2">Portfolio Website</h3>
+                                <div class="project" id="knight" data-bs-toggle="modal" data-bs-target="#knightmodal">
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="knightmodal" tabindex="-1" aria-labelledby="ModalLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="ModalLabel">Knight of Xylasia</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>@todo description</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary"
+                                                        href="https://github.com/cjrussell23/Knight-of-Xylasia"
+                                                        role="button">View on GitHub</a>
+                                                    <a class="btn btn-success"
+                                                        href="https://github.com/cjrussell23/Knight-of-Xylasia/releases/download/v0.1/KnightofXylasia_v0.1.zip"
+                                                        role="button">Download</a>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Modal -->
+                                    <div class="carousel-caption">
+                                        <h5>Knight of Xylasia</h5>
+                                        <p>Made with Unity / C#</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fourth item - Portfolio Website -->
+                            <div class="carousel-item pt-4" data-bs-interval="10000">
+                                <div class="project" id="website" data-bs-toggle="modal"
+                                    data-bs-target="#portfoliomodal">
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="portfoliomodal" tabindex="-1"
+                                        aria-labelledby="ModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="ModalLabel">Portfolio Website</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>@todo description</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary"
+                                                        href="https://github.com/cjrussell23/cjrussell23.github.io"
+                                                        role="button">View on GitHub</a>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Modal -->
+                                    <div class="carousel-caption">
+                                        <h5>Portfolio Website</h5>
+                                        <p>Made with HTML/CSS,<br>Bootstrap, and Github pages</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -180,6 +291,47 @@
                         </button>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- Contact Section -->
+        <div class="container-fluid scroll-snap" id="contact">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 profile-picture-container">
+                    <img id="profile-picture" src="assets/images/face.jpg" alt="Contact Me" class="img-fluid">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div id="contact-container">
+                        <table id="contact-table">
+                            <tr>
+                                <td><b>Phone:</b></td>
+                                <td><a class="no-link" href="tel:2047705065">(204) 770-5065</a></td>
+                            </tr>
+                            <tr>
+                                <td><b>Email:</b></td>
+                                <td><a class="no-link" href="mailto:chjrussell@gmail.com">chjrussell@gmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <td><b>Location:</b></td>
+                                <td><a class="no-link"
+                                        href="https://www.google.com/maps/place/Calgary,+AB/@51.0272883,-114.3680132,10z/data=!3m1!4b1!4m5!3m4!1s0x537170039f843fd5:0x266d3bb1b652b63a!8m2!3d51.0447331!4d-114.0718831">Calgary,
+                                        Alberta</a></td>
+                            </tr>
+                            <tr>
+                                <td><b>LinkedIn:</b></td>
+                                <td><a class="no-link"
+                                        href="https://www.linkedin.com/in/charles-russell-671306244/">Charles
+                                        Russell</a></td>
+                            </tr>
+                            <tr>
+                                <td><b>GitHub:</b></td>
+                                <td><a class="no-link" href="https://github.com/cjrussell23">cjrussell23</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="update">
+                <p><b>Last Updated: </b> 2022-07-04</p>
             </div>
         </div>
     </div>

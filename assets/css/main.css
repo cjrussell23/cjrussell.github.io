@@ -20,6 +20,7 @@ body {
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     padding: 2em;
     color: white;
 }
@@ -28,8 +29,19 @@ body {
     padding-top: 15em;
 }
 #about {
-    background-image: url("../images/about.jpg");
+    background-image: url("../images/fishing.jpg");
     padding-top: 10em;
+}
+
+@media only screen and (max-width: 375px) {
+    #about {
+        background-position: left;
+    }
+}
+@media only screen and (max-width: 1234px) {
+    #intro {
+        background-image: url("../images/intro-small.jpg");
+    }
 }
 #skills {
     background-image: url("../images/skills.jpg");
@@ -46,12 +58,20 @@ body {
 .scroll-snap {
     scroll-snap-align: start;
 }
+.bottom {
+    margin-top: auto !important;
+}
 .nav-link:hover {
     background-color: white;
     color: black !important;
 }
 .nav-link {
     text-align: center;
+}
+.text-box {
+    max-width: 756px !important;
+    margin: 0 auto;
+    padding: 1em;
 }
 .text-box:hover {
     background-color: rgba(33, 37, 41, 0.8);
@@ -102,10 +122,20 @@ body {
     margin: auto;
     max-height: 50vh;
 }
+@media screen and (max-width: 768px) {
+    .offcanvas {
+        max-width: 30% !important;
+        min-width: fit-content;
+    }
+}
+    
+
 .no-link {
     text-decoration: none;
     color: white;
-    padding-left: 1em;
+}
+.no-link:hover {
+    color: rgb(204, 204, 204);
 }
 #profile-picture {
     border-radius: 50%;

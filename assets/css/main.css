@@ -1,3 +1,4 @@
+/* Main body */
 .main-content-container {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -17,7 +18,9 @@ body {
     background-attachment: fixed;
     background-position: left top;
 }
+/* /Main Body */
 
+/* Content Sections */
 .content-section {
     min-height: 100vh;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
@@ -33,6 +36,12 @@ body {
     padding-top: 15em;
 }
 
+@media only screen and (max-width: 1234px) {
+    #intro {
+        background-image: url("../images/intro-small.jpg");
+    }
+}
+
 #about {
     background-image: url("../images/fishing.jpg");
     padding-top: 10em;
@@ -41,12 +50,6 @@ body {
 @media only screen and (max-width: 375px) {
     #about {
         background-position: left;
-    }
-}
-
-@media only screen and (max-width: 1234px) {
-    #intro {
-        background-image: url("../images/intro-small.jpg");
     }
 }
 
@@ -63,7 +66,9 @@ body {
     background-image: linear-gradient(#212529 0%, #000000 100%);
     padding-top: 5em;
 }
+/* /Content Sections */
 
+/* Utilities */
 .scroll-snap {
     scroll-snap-align: start;
 }
@@ -72,6 +77,17 @@ body {
     margin-top: auto !important;
 }
 
+.no-link {
+    text-decoration: none;
+    color: white;
+}
+
+.no-link:hover {
+    color: rgb(204, 204, 204);
+}
+/* /Utilities */
+
+/* Main Navigation */
 .nav-link:hover {
     background-color: white;
     color: black !important;
@@ -81,6 +97,15 @@ body {
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    .offcanvas {
+        max-width: 30% !important;
+        min-width: fit-content;
+    }
+}
+/* /Main Navigation */
+
+/* Text Box */
 .text-box {
     max-width: 756px !important;
     margin: 0 auto;
@@ -91,7 +116,9 @@ body {
     background-color: rgba(33, 37, 41, 0.8);
     border-radius: 1em;
 }
+/* /Text Box */
 
+/* Skills Section*/
 .skill {
     background-color: rgba(33, 37, 41, 0.8);
     border-radius: 1em;
@@ -106,6 +133,12 @@ body {
     margin: 0 auto !important;
 }
 
+#skills-container {
+    background-color: rgba(33, 37, 41, 0.8);
+}
+/* /Skills Section*/
+
+/* Projects Section*/
 .project {
     background-color: rgb(50, 45, 45);
     min-height: 75vh;
@@ -115,13 +148,6 @@ body {
     max-height: 50vh;
     object-fit: cover;
     object-position: center;
-}
-
-#flappybird {
-    background-image: url("../images/flappybird.gif");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
 .project-title {
@@ -138,55 +164,16 @@ body {
     color: black;
 }
 
-#contact-container {
-    background-color: #212529;
-    padding: 1em;
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 1em;
     width: fit-content;
     margin: auto;
-    max-height: 50vh;
+    padding: 1em;
 }
+/* /Projects Section*/
 
-@media screen and (max-width: 768px) {
-    .offcanvas {
-        max-width: 30% !important;
-        min-width: fit-content;
-    }
-}
-
-#skills-container {
-    background-color: rgba(33, 37, 41, 0.8);
-}
-
-.no-link {
-    text-decoration: none;
-    color: white;
-}
-
-.no-link:hover {
-    color: rgb(204, 204, 204);
-}
-
-#profile-picture {
-    border-radius: 50%;
-    max-height: 50vh;
-}
-
-.profile-picture-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2em;
-}
-
-.update {
-    position: relative;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-    margin-top: 12em;
-}
-
+/* Project Backgrounds */
 #arcade {
     background-image: url("../images/arcade.gif");
     background-repeat: no-repeat;
@@ -208,11 +195,50 @@ body {
     background-position: center;
 }
 
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.8);
+#rpg {
+    background-image: url("../images/slingshotboy.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#flappybird {
+    background-image: url("../images/flappybird.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+/* /Project Backgrounds */
+
+/* Contact Section */
+#contact-container {
+    background-color: #212529;
+    padding: 1em;
     border-radius: 1em;
     width: fit-content;
     margin: auto;
-    padding: 1em;
-
+    max-height: 50vh;
 }
+
+#profile-picture {
+    border-radius: 50%;
+    max-height: 50vh;
+}
+
+.profile-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+/* /Contact Section */
+
+/* Update Footer */
+.update {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    margin-top: 12em;
+}
+/* /Update Footer */

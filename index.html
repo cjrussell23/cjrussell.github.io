@@ -12,6 +12,17 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navId" tabindex="0">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="d-flex flex-column justify-content-evenly align-items-center" style="height:100vh;">
+            <h1 class="display-4" style="color: white;">Loading awesome stuff...</h1>
+            <div class="spinner-border text-primary" role="status" style="width: 10rem; height:10rem">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <!-- /Preloader -->
+
     <!-- Navigation Bar -->
     <nav class="navbar navbar-dark bg-dark navbar-expand-md bg-light fixed-top" id="navId">
         <!-- Logo/Name -->
@@ -665,7 +676,7 @@
         <!-- Contact Section -->
         <div class="container-fluid scroll-snap content-section position-relative d-flex flex-column flex-md-row justify-content-center align-items-center"
             id="contact">
-            <div class="profile-picture-container mh-50">
+            <div class="profile-picture-container" style="max-width: 20em;">
                 <img id="profile-picture" src="assets/images/face2.jpg" alt="Contact Me" class="img-fluid">
             </div>
             <div class="mh-50 h-50 px-5 py-5">
@@ -701,7 +712,7 @@
                     </div>
                 </div>
             </div>
-            <div class="position-absolute bottom-0 end-0">
+            <div class="position-absolute bottom-0 end-0 pe-3">
                 <p><b>Last Updated: </b> 2022-07-17</p>
             </div>
         </div>
@@ -714,6 +725,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

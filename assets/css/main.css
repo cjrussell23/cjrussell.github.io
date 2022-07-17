@@ -58,12 +58,16 @@ body {
 }
 
 #projects {
-    background-image: linear-gradient(#212529 0%, #000000 100%);
+    background: linear-gradient(-45deg, #dc5228, #3a3a45, #23a6d5, #021e17);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     padding-top: 5em;
 }
 
 #contact {
-    background-image: linear-gradient(#212529 0%, #000000 100%);
+    background: linear-gradient(-45deg, #dc5228, #3a3a45, #23a6d5, #021e17);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     padding-top: 5em;
 }
 /* /Content Sections */
@@ -159,6 +163,7 @@ body {
 /* Projects Section*/
 .project {
     background-color: rgb(50, 45, 45);
+    border-radius: 1em;
     min-height: 75vh;
 }
 
@@ -240,6 +245,18 @@ body {
 #profile-picture {
     border-radius: 50%;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 /* /Contact Section */
 
 /* 404 page */
@@ -254,7 +271,9 @@ body {
 
 /* Preloader */
 #preloader {
-    background-color: #212529;
+    background: linear-gradient(-45deg, #dc5228, #3a3a45, #23a6d5, #021e17);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     min-height: 100vh;
     width: 100%;
     position: fixed;

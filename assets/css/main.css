@@ -215,30 +215,11 @@ body {
     background-color: #212529;
     padding: 1em;
     border-radius: 1em;
-    width: fit-content;
+    min-width: fit-content;
     margin: auto;
-    max-height: 50vh;
 }
 
 #profile-picture {
     border-radius: 50%;
-    max-height: 50vh;
-}
-
-.profile-picture-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2em;
 }
 /* /Contact Section */
-
-/* Update Footer */
-.update {
-    position: relative;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-    margin-top: 12em;
-}
-/* /Update Footer */

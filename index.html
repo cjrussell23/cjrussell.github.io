@@ -65,7 +65,7 @@
             <h6 class="display-6 text-center">I am a developer that loves making and playing games</h3>
                 <a href="#about" class="mt-auto no-link d-flex flex-column align-items-center">
                     <p>Learn more about what I do</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="auto" fill="currentColor"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
                         class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
@@ -425,9 +425,10 @@
                             <div class="carousel-item active pt-4">
                                 <div class="project" id="flappybird" data-bs-toggle="modal" data-bs-target="#birdmodal">
                                     <!-- Alert -->
-                                    <div class="alert alert-success alert-dismissible fade show" role="alert"
-                                        data-bs-dismiss="alert" aria-label="Close">
-                                        <strong>Hello there!</strong> Here is a preview of some of my projects. Click for a description.
+                                    <div class="alert alert-success alert-dismissible fade show mx-auto" role="alert"
+                                        data-bs-dismiss="alert" aria-label="Close" style="max-width: 620px;;">
+                                        <strong>Hello there!</strong> Here is a preview of some of my projects. Click
+                                        for a description.
                                         <button type="button" class="btn-close" data-bs-dismiss="alert"
                                             aria-label="Close"></button>
                                     </div>
@@ -662,13 +663,14 @@
             </div>
         </div>
         <!-- Contact Section -->
-        <div class="container-fluid scroll-snap content-section" id="contact">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 profile-picture-container">
-                    <img id="profile-picture" src="assets/images/face2.jpg" alt="Contact Me" class="img-fluid">
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <div id="contact-container">
+        <div class="container-fluid scroll-snap content-section position-relative d-flex flex-column flex-md-row justify-content-center align-items-center"
+            id="contact">
+            <div class="profile-picture-container mh-50">
+                <img id="profile-picture" src="assets/images/face2.jpg" alt="Contact Me" class="img-fluid">
+            </div>
+            <div class="mh-50 h-50 px-5 py-5">
+                <div id="contact-container">
+                    <div class="d-flex justify-content-center">
                         <table id="contact-table">
                             <tr>
                                 <td><b>Phone:</b></td>
@@ -699,10 +701,11 @@
                     </div>
                 </div>
             </div>
-            <div class="update">
+            <div class="position-absolute bottom-0 end-0">
                 <p><b>Last Updated: </b> 2022-07-17</p>
             </div>
         </div>
+        <!-- /Contact Section -->
     </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->

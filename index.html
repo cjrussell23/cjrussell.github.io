@@ -85,8 +85,8 @@
             </div>
         </div>
         <!-- Skills Section -->
-        <div class="container-fluid scroll-snap content-section " id="skills">
-            <div class="mx-4 card" id="skills-container">
+        <div class="container-fluid scroll-snap content-section d-inline-flex" id="skills">
+            <div class="card mt-5 col-12" id="skills-container">
                 <ul class="nav nav-tabs nav-fill" id="skillsTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="languages-tab" data-bs-toggle="tab"
@@ -103,7 +103,7 @@
                             type="button" role="tab" aria-controls="tools" aria-selected="false">Tools</button>
                     </li>
                 </ul>
-                <div class="tab-content" id="skillsTabContent">
+                <div class="tab-content my-auto" id="skillsTabContent">
                     <!-- Languages -->
                     <div class="tab-pane fade show active" id="languages" role="tabpanel"
                         aria-labelledby="languages-tab">
@@ -376,6 +376,22 @@
                                 </div>
                             </div>
                             <!-- /Photoshop -->
+                            <!-- Postgres -->
+                            <div
+                                class="skill-card d-flex flex-column justify-content-center align-items-center col-6 col-md-3 my-3">
+                                <div class="skill-card-icon">
+                                    <img src="assets/images/PostgreSQL_logo.3colors.svg" width="64px" height="64px">
+                                </div>
+                                <div class="skill-card-header mt-2">
+                                    <h5 class="skill-card-title">Postgres</h5>
+                                </div>
+                                <div class="progress" style="width: 50%;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <!-- /Postgres -->
                         </div>
                     </div>
                     <!-- /Tools -->
@@ -637,7 +653,6 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

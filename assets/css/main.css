@@ -1,12 +1,14 @@
-.main-content-container{
+.main-content-container {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+
 html {
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
 }
+
 body {
     background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
     background-repeat: no-repeat;
@@ -15,6 +17,7 @@ body {
     background-attachment: fixed;
     background-position: left top;
 }
+
 .content-section {
     min-height: 100vh;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
@@ -24,10 +27,12 @@ body {
     padding: 2em;
     color: white;
 }
+
 #intro {
     background-image: url("../images/peyto_lake.jpg");
     padding-top: 15em;
 }
+
 #about {
     background-image: url("../images/fishing.jpg");
     padding-top: 10em;
@@ -38,82 +43,102 @@ body {
         background-position: left;
     }
 }
+
 @media only screen and (max-width: 1234px) {
     #intro {
         background-image: url("../images/intro-small.jpg");
     }
 }
+
 #skills {
     background-image: url("../images/skills.jpg");
-    padding-top: 8em;
+    padding-top: 4em;
 }
+
 #projects {
     background-image: linear-gradient(#212529 0%, #000000 100%);
     padding-top: 5em;
 }
+
 #contact {
     background-image: linear-gradient(#212529 0%, #000000 100%);
     padding-top: 5em;
 }
+
 .scroll-snap {
     scroll-snap-align: start;
 }
+
 .bottom {
     margin-top: auto !important;
 }
+
 .nav-link:hover {
     background-color: white;
     color: black !important;
 }
+
 .nav-link {
     text-align: center;
 }
+
 .text-box {
     max-width: 756px !important;
     margin: 0 auto;
     padding: 1em;
 }
+
 .text-box:hover {
     background-color: rgba(33, 37, 41, 0.8);
     border-radius: 1em;
 }
+
 .skill {
     background-color: rgba(33, 37, 41, 0.8);
     border-radius: 1em;
 }
-.skill > h3 {
+
+.skill>h3 {
     text-align: center;
 }
-.skill > ul {
+
+.skill>ul {
     display: table;
     margin: 0 auto !important;
 }
+
 .project {
     background-color: rgb(50, 45, 45);
     min-height: 75vh;
 }
+
 .project-image {
     max-height: 50vh;
     object-fit: cover;
     object-position: center;
 }
+
 #flappybird {
     background-image: url("../images/flappybird.gif");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
+
 .project-title {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0.25em !important;
     max-width: fit-content !important;
 }
+
 .modal-title {
     color: black;
 }
+
 .modal-body {
     color: black;
 }
+
 #contact-container {
     background-color: #212529;
     padding: 1em;
@@ -122,31 +147,39 @@ body {
     margin: auto;
     max-height: 50vh;
 }
+
 @media screen and (max-width: 768px) {
     .offcanvas {
         max-width: 30% !important;
         min-width: fit-content;
     }
 }
-    
+
+#skills-container {
+    background-color: rgba(33, 37, 41, 0.8);
+}
 
 .no-link {
     text-decoration: none;
     color: white;
 }
+
 .no-link:hover {
     color: rgb(204, 204, 204);
 }
+
 #profile-picture {
     border-radius: 50%;
     max-height: 50vh;
 }
+
 .profile-picture-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 2em;
 }
+
 .update {
     position: relative;
     bottom: 0;
@@ -154,28 +187,32 @@ body {
     text-align: right;
     margin-top: 12em;
 }
+
 #arcade {
     background-image: url("../images/arcade.gif");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
+
 #knight {
     background-image: url("../images/KnightofXylasia.gif");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
+
 #website {
     background-image: url("../images/website.gif");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
+
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 1em;
-    width:fit-content;
+    width: fit-content;
     margin: auto;
     padding: 1em;
 

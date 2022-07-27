@@ -152,12 +152,18 @@ body {
 }
 
 #skills-container {
+    margin-top: 2em;
     background-color: rgba(33, 37, 41, 0.9);
     max-width: 75%;
     margin-left: auto;
     margin-right: auto;
-    max-height: 85vh;
+    max-height: 80vh;
 }
+
+#skills-alert {
+    z-index: 1;
+}
+
 /* /Skills Section*/
 
 /* Projects Section*/
@@ -194,6 +200,7 @@ body {
     margin: auto;
     padding: 1em;
 }
+
 /* /Projects Section*/
 
 /* Project Backgrounds */

@@ -164,6 +164,10 @@ body {
     z-index: 1;
 }
 
+#skillsTabContent {
+    min-height: 80vh;
+}
+
 /* /Skills Section*/
 
 /* Projects Section*/

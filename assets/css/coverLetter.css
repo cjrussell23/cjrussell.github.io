@@ -1,0 +1,15 @@
+#contactInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#coverLetter {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.5;
+}

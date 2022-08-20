@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/coverLetterForm.css">
+    <script src="assets/js/coverLetterForm.js"></script>
+    <title>Form</title>
+</head>
+<body>
+    <!-- Form to get employer name and job title -->
+    <div id="content">
+        <form onsubmit="formSubmit(); return false;" id="coverLetterInfoForm">
+            <table>
+                <tr>
+                    <td><label for="applicantName">Name:</label></td>
+                    <td><input type="text" id="applicantName" name="applicantName" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td><label for="companyName">Company:</label></td>
+                    <td><input type="text" id="companyName" name="companyName" placeholder="Enter employer name"></td>
+                </tr>
+                <tr>
+                    <td><label for="jobTitle">Job Title:</label></td>
+                    <td><input type="text" id="jobTitle" name="jobTitle" placeholder="Enter job title"></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date:</label></td>
+                    <td><input type="date" id="date" name="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="applicantPhone">Phone:</label></td>
+                    <td><input type="text" id="applicantPhone" name="applicantPhone" placeholder="Enter phone number"></td>
+                </tr>
+                <tr>
+                    <td><label for="applicantEmail">Email:</label></td>
+                    <td><input type="text" id="applicantEmail" name="applicantEmail" placeholder="Enter email"></td>
+                </tr>
+                <tr>
+                    <td><label for="applicantAddress">Address:</label></td>
+                    <td><input type="text" id="applicantAddress" name="applicantAddress" placeholder="Enter address"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

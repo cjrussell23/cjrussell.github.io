@@ -242,6 +242,16 @@ body {
     background-size: contain;
     background-position: center;
 }
+<<<<<<< Updated upstream
+=======
+
+#alison-blog {
+    background-image: url("../images/alison-blog.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+>>>>>>> Stashed changes
 /* /Project Backgrounds */
 
 /* Contact Section */

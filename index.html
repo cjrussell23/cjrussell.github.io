@@ -265,8 +265,8 @@
                                 </div>
                                 <div class="progress" style="width: 50%;">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 60%"></div>
+                                        role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 80%"></div>
                                 </div>
                             </div>
                             <!-- /Node -->
@@ -302,6 +302,22 @@
                                 </div>
                             </div>
                             <!-- /Handlebars -->
+                            <!-- EJS -->
+                            <div
+                                class="skill-card d-flex flex-column justify-content-center align-items-center col-6 col-md-3 my-3">
+                                <div class="skill-card-icon">
+                                    <img src="assets/images/ejs-icon.jpg" width="64px" height="64px">
+                                </div>
+                                <div class="skill-card-header mt-2">
+                                    <h5 class="skill-card-title">EJS</h5>
+                                </div>
+                                <div class="progress" style="width: 50%;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <!-- /EJS -->
                             <!-- Bootstrap -->
                             <div
                                 class="skill-card d-flex flex-column justify-content-center align-items-center col-6 col-md-3 my-3">
@@ -421,6 +437,54 @@
                                 </div>
                             </div>
                             <!-- /Postgres -->
+                            <!-- Linux -->
+                            <div
+                                class="skill-card d-flex flex-column justify-content-center align-items-center col-6 col-md-3 my-3">
+                                <div class="skill-card-icon">
+                                    <img src="assets/images/unix.png" width="64px" height="64px">
+                                </div>
+                                <div class="skill-card-header mt-2">
+                                    <h5 class="skill-card-title">Linux</h5>
+                                </div>
+                                <div class="progress" style="width: 50%;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 50%"></div>
+                                </div>
+                            </div> 
+                            <!-- /Linux -->
+                            <!-- Digital Ocean -->
+                            <div
+                                class="skill-card d-flex flex-column justify-content-center align-items-center col-6 col-md-3 my-3">
+                                <div class="skill-card-icon">
+                                    <img src="assets/images/DigitalOcean_icon.svg" width="64px" height="64px">
+                                </div>
+                                <div class="skill-card-header mt-2">
+                                    <h5 class="skill-card-title">Digital Ocean</h5>
+                                </div>
+                                <div class="progress" style="width: 50%;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <!-- /Digital Ocean -->
+                            <!-- Mongodb -->
+                            <div
+                                class="skill-card d-flex flex-column justify-content-center align-items-center col-6 col-md-3 my-3">
+                                <div class="skill-card-icon">
+                                    <img src="assets/images/mongodb-icon.svg" width="64px" height="64px">
+                                </div>
+                                <div class="skill-card-header mt-2">
+                                    <h5 class="skill-card-title">Mongodb</h5>
+                                </div>
+                                <div class="progress" style="width: 50%;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 50%"></div>
+                                </div>
+                            </div> 
+                            <!-- /Mongodb -->
                         </div>
                     </div>
                     <!-- /Tools -->
@@ -445,6 +509,10 @@
                                 aria-label="Slide 4"></button>
                             <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="4"
                                 aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="6"
+                                aria-label="Slide 7"></button>
                         </div>
                         <!-- First item - Flappy Bird Clone -->
 
@@ -674,6 +742,78 @@
                                 </div>
                             </div>
                             <!-- /Fifth Item - Top Down RPG -->
+                            <!-- Sixth Item - Alisons Website -->
+                            <div class="carousel-item pt-4">
+                                <div class="project" id="alison-blog" data-bs-toggle="modal" data-bs-target="#alison-blog">
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="alison-blog" tabindex="-1" aria-labelledby="ModalLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="ModalLabel">Blog for Alison Lefebvre</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>This is a blog website that I was asked to make by Alison Lefebvre. She wanted a blog to share her writing. She also wanted to have her contact information so that people could contact her for various inquiries. I built this site with Node, Express, and EJS for the backend. I used MongoDB for the database to store the blog posts and user login information. Once logged in, the blog admin can create and edit posts by filling out a form. This site is still a work in progress and is being updated often. I set up the hosting for the site using a Digital Ocean Droplet.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary"
+                                                        href="https://github.com/cjrussell23/Blog"
+                                                        role="button">View on GitHub</a>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Modal -->
+                                    <div class="carousel-caption">
+                                        <h5>Blog for Alison Lefebvre</h5>
+                                        <p>Node Express EJS</p>
+                                        <p>MongoDB Digital Ocean</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Sixth Item - Alisons Website -->
+                            <!-- Seventh Item - Pokemon Game -->
+                            <div class="carousel-item pt-4">
+                                <div class="project" id="pokemon" data-bs-toggle="modal" data-bs-target="#pokemon-modal">
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="pokemon-modal" tabindex="-1" aria-labelledby="modal-label"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modal-label">Multiplayer Pokemon RPG</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary"
+                                                        href="https://github.com/cjrussell23/Top-Down-RPG"
+                                                        role="button">View on GitHub</a>
+                                                    <a class="btn btn-success"
+                                                        href="https://github.com/cjrussell23/Top-Down-RPG/releases/download/v0.1/TopDownRPG_v0.1.zip"
+                                                        role="button">Download</a>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Modal -->
+                                    <div class="carousel-caption">
+                                        <h5>Mulitplayer Pokemon RPG</h5>
+                                        <p>Made with Unity / C#</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Seventh Item - Pokemon -->
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#project-carousel"
                             data-bs-slide="prev">

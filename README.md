@@ -7,7 +7,7 @@
   <h3 align="center">cjrussell23.github.io</h3>
 
   <p align="center">
-    A static one-page protfolio site built in 2022 using HTML and Bootstrap.
+    A static one-page portfolio site built in 2022 using HTML and Bootstrap.
     <br />
     <br />
     <a href="https://github.com/cjrussell23/cjrussell23.github.io"><strong>Explore the docs »</strong></a>
